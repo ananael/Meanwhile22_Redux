@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  IntroViewController.h
 //  Meanwhile22
 //
 //  Created by Michael Hoffman on 11/17/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface IntroViewController : UIViewController
 
 @end
-
