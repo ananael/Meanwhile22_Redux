@@ -61,7 +61,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HQp-Ig-soI" userLabel="backgroundImage">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IMZ-2j-aXF" userLabel="logoView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IMZ-2j-aXF" userLabel="logoView" customClass="M22HomeAnimationView">
                                 <rect key="frame" x="20" y="20" width="335" height="335"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -72,6 +72,9 @@
                                 <state key="normal" title="PODCAST">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="podcastTapped:" destination="I57-be-lYR" eventType="touchUpInside" id="HLT-or-Ifq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uh6-Hp-mGb" userLabel="hostButton">
                                 <rect key="frame" x="20" y="500" width="335" height="80"/>
@@ -80,6 +83,9 @@
                                 <state key="normal" title="HOSTS">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="hostTapped:" destination="I57-be-lYR" eventType="touchUpInside" id="Cmh-Fa-mrn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gl-CO-6kA" userLabel="twitterButton">
                                 <rect key="frame" x="235" y="606" width="50" height="41"/>
@@ -144,6 +150,14 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="HQp-Ig-soI" id="vTS-TI-Z5O"/>
+                        <outlet property="facebookTapped" destination="dcK-1T-gVz" id="3Nm-tf-NSl"/>
+                        <outlet property="homeAnimation" destination="IMZ-2j-aXF" id="OT5-43-snh"/>
+                        <outlet property="hostButton" destination="uh6-Hp-mGb" id="1Ke-fa-gCI"/>
+                        <outlet property="podcastButton" destination="zgR-Ir-cNo" id="pbr-s7-N5h"/>
+                        <outlet property="twitterTapped" destination="4gl-CO-6kA" id="84y-tB-aP5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RYb-ZJ-caL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

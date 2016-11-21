@@ -36,6 +36,8 @@
 		D211FC651DE2ACEA00270FBE /* ralf@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D211FC4B1DE2ACEA00270FBE /* ralf@2x.png */; };
 		D211FC671DE2AF7900270FBE /* M22 Intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D211FC661DE2AF7900270FBE /* M22 Intro.mp3 */; };
 		D211FC6A1DE2B03200270FBE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D211FC691DE2B03200270FBE /* AVFoundation.framework */; };
+		D211FC6D1DE2B95A00270FBE /* M22HomeAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = D211FC6C1DE2B95A00270FBE /* M22HomeAnimationView.m */; };
+		D211FC6F1DE2B96900270FBE /* M22HomeAnimation.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D211FC6E1DE2B96900270FBE /* M22HomeAnimation.xcassets */; };
 		D29369401DDD8873002851D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D293693F1DDD8873002851D5 /* main.m */; };
 		D29369431DDD8873002851D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D29369421DDD8873002851D5 /* AppDelegate.m */; };
 		D29369491DDD8873002851D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D29369471DDD8873002851D5 /* Main.storyboard */; };
@@ -97,6 +99,9 @@
 		D211FC4B1DE2ACEA00270FBE /* ralf@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ralf@2x.png"; sourceTree = "<group>"; };
 		D211FC661DE2AF7900270FBE /* M22 Intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "M22 Intro.mp3"; sourceTree = "<group>"; };
 		D211FC691DE2B03200270FBE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D211FC6B1DE2B95A00270FBE /* M22HomeAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M22HomeAnimationView.h; sourceTree = "<group>"; };
+		D211FC6C1DE2B95A00270FBE /* M22HomeAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M22HomeAnimationView.m; sourceTree = "<group>"; };
+		D211FC6E1DE2B96900270FBE /* M22HomeAnimation.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = M22HomeAnimation.xcassets; sourceTree = "<group>"; };
 		D293693B1DDD8873002851D5 /* Meanwhile22.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meanwhile22.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D293693F1DDD8873002851D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D29369411DDD8873002851D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -150,11 +155,30 @@
 			children = (
 				D211FC2F1DE2ACBD00270FBE /* M22IntroAnimationView.h */,
 				D211FC301DE2ACBD00270FBE /* M22IntroAnimationView.m */,
+				D211FC6B1DE2B95A00270FBE /* M22HomeAnimationView.h */,
+				D211FC6C1DE2B95A00270FBE /* M22HomeAnimationView.m */,
 			);
 			name = Animations;
 			sourceTree = "<group>";
 		};
 		D211FC2E1DE2ACAB00270FBE /* animation images */ = {
+			isa = PBXGroup;
+			children = (
+				D211FC6E1DE2B96900270FBE /* M22HomeAnimation.xcassets */,
+				D211FC701DE2BB3200270FBE /* M22IntroAnimation images */,
+			);
+			name = "animation images";
+			sourceTree = "<group>";
+		};
+		D211FC681DE2B03200270FBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D211FC691DE2B03200270FBE /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D211FC701DE2BB3200270FBE /* M22IntroAnimation images */ = {
 			isa = PBXGroup;
 			children = (
 				D211FC321DE2ACEA00270FBE /* 22PL.png */,
@@ -184,15 +208,7 @@
 				D211FC4A1DE2ACEA00270FBE /* ralf.png */,
 				D211FC4B1DE2ACEA00270FBE /* ralf@2x.png */,
 			);
-			name = "animation images";
-			sourceTree = "<group>";
-		};
-		D211FC681DE2B03200270FBE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D211FC691DE2B03200270FBE /* AVFoundation.framework */,
-			);
-			name = Frameworks;
+			name = "M22IntroAnimation images";
 			sourceTree = "<group>";
 		};
 		D29369321DDD8873002851D5 = {
@@ -404,6 +420,7 @@
 				D211FC4F1DE2ACEA00270FBE /* base@2x.png in Resources */,
 				D211FC621DE2ACEA00270FBE /* ralf bird.png in Resources */,
 				D211FC5D1DE2ACEA00270FBE /* mfg bolt@2x.png in Resources */,
+				D211FC6F1DE2B96900270FBE /* M22HomeAnimation.xcassets in Resources */,
 				D211FC581DE2ACEA00270FBE /* flash.png in Resources */,
 				D211FC541DE2ACEA00270FBE /* cap star.png in Resources */,
 				D211FC511DE2ACEA00270FBE /* blurb@2x.png in Resources */,
@@ -440,6 +457,7 @@
 			files = (
 				D29369431DDD8873002851D5 /* AppDelegate.m in Sources */,
 				D29369731DDD8965002851D5 /* IntroViewController.m in Sources */,
+				D211FC6D1DE2B95A00270FBE /* M22HomeAnimationView.m in Sources */,
 				D211FC311DE2ACBD00270FBE /* M22IntroAnimationView.m in Sources */,
 				D29369401DDD8873002851D5 /* main.m in Sources */,
 				D29369761DDD897D002851D5 /* HomeViewController.m in Sources */,

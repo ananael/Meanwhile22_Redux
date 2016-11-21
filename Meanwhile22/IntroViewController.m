@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet M22IntroAnimationView *introAnimation;
 @property AVAudioPlayer *audioPlayer;
 @property NSTimer *timer;
+@property NSTimer *soundTimer;
 
 @end
 
@@ -33,6 +34,15 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)fxTimer
+{
+    self.soundTimer = [NSTimer scheduledTimerWithTimeInterval:0.1
+                                                  target:self
+                                                selector:@selector(introFX)
+                                                userInfo:nil
+                                                 repeats:NO];
 }
 
 -(void)introFX
@@ -65,7 +75,7 @@
 {
     [self.introAnimation addM22IntroAnimation];
     [self introTimer];
-    [self introFX];
+    [self fxTimer];
 }
 
 
