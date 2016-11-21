@@ -90,10 +90,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gl-CO-6kA" userLabel="twitterButton">
                                 <rect key="frame" x="235" y="606" width="50" height="41"/>
                                 <state key="normal" image="twitter logo.png"/>
+                                <connections>
+                                    <action selector="twitterTapped:" destination="I57-be-lYR" eventType="touchUpInside" id="oSF-i2-Ofv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcK-1T-gVz" userLabel="facebookButton">
                                 <rect key="frame" x="305" y="606" width="50" height="41"/>
                                 <state key="normal" image="facebook logo.png"/>
+                                <connections>
+                                    <action selector="facebookTapped:" destination="I57-be-lYR" eventType="touchUpInside" id="jv2-Xj-BSl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -152,11 +158,9 @@
                     </view>
                     <connections>
                         <outlet property="backgroundImage" destination="HQp-Ig-soI" id="vTS-TI-Z5O"/>
-                        <outlet property="facebookTapped" destination="dcK-1T-gVz" id="3Nm-tf-NSl"/>
                         <outlet property="homeAnimation" destination="IMZ-2j-aXF" id="OT5-43-snh"/>
                         <outlet property="hostButton" destination="uh6-Hp-mGb" id="1Ke-fa-gCI"/>
                         <outlet property="podcastButton" destination="zgR-Ir-cNo" id="pbr-s7-N5h"/>
-                        <outlet property="twitterTapped" destination="4gl-CO-6kA" id="84y-tB-aP5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RYb-ZJ-caL" userLabel="First Responder" sceneMemberID="firstResponder"/>

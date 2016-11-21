@@ -18,8 +18,9 @@
 
 - (IBAction)podcastTapped:(id)sender;
 - (IBAction)hostTapped:(id)sender;
-@property (weak, nonatomic) IBOutlet UIButton *twitterTapped;
-@property (weak, nonatomic) IBOutlet UIButton *facebookTapped;
+- (IBAction)twitterTapped:(id)sender;
+- (IBAction)facebookTapped:(id)sender;
+
 
 
 @end
@@ -52,9 +53,46 @@
 }
 */
 
-- (IBAction)podcastTapped:(id)sender {
+- (IBAction)podcastTapped:(id)sender
+{
+    
 }
 
-- (IBAction)hostTapped:(id)sender {
+- (IBAction)hostTapped:(id)sender
+{
+    
 }
+
+- (IBAction)twitterTapped:(id)sender
+{
+    //openURL was deprecated in iOS10.0
+    //openURL: options: completionHandler requires NSURL, NSDictionary (for "options", if no options use  blank dictionary), and completionHandler (if none, use nil)
+    NSURL *twitterURL = [NSURL URLWithString:@"https://twitter.com/hashtag/meanwhile22pageslater"];
+    [[UIApplication sharedApplication] openURL:twitterURL
+                                       options:@{}
+                             completionHandler:nil];
+}
+
+- (IBAction)facebookTapped:(id)sender
+{
+    //openURL was deprecated in iOS10.0
+    //openURL: options: completionHandler requires NSURL, NSDictionary (for "options", if no options use  blank dictionary), and completionHandler (if none, use nil)
+    NSURL *fbURL = [NSURL URLWithString:@"https://www.facebook.com/meanwhille22pageslater/"];
+    [[UIApplication sharedApplication] openURL:fbURL
+                                       options:@{}
+                             completionHandler:nil];
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @end
