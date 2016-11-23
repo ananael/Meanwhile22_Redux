@@ -40,6 +40,9 @@
 		D211FC6F1DE2B96900270FBE /* M22HomeAnimation.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D211FC6E1DE2B96900270FBE /* M22HomeAnimation.xcassets */; };
 		D211FC731DE3947C00270FBE /* Podcast.m in Sources */ = {isa = PBXBuildFile; fileRef = D211FC721DE3947C00270FBE /* Podcast.m */; };
 		D211FC761DE3954700270FBE /* PodcastParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D211FC751DE3954700270FBE /* PodcastParser.m */; };
+		D211FC7A1DE3A38800270FBE /* EpisodeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D211FC791DE3A38800270FBE /* EpisodeListViewController.m */; };
+		D211FC7E1DE3A3CD00270FBE /* EpisodeListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D211FC7D1DE3A3CD00270FBE /* EpisodeListTableViewCell.m */; };
+		D211FC801DE4DB2D00270FBE /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D211FC7F1DE4DB2D00270FBE /* AVKit.framework */; };
 		D29369401DDD8873002851D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D293693F1DDD8873002851D5 /* main.m */; };
 		D29369431DDD8873002851D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D29369421DDD8873002851D5 /* AppDelegate.m */; };
 		D29369491DDD8873002851D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D29369471DDD8873002851D5 /* Main.storyboard */; };
@@ -108,6 +111,11 @@
 		D211FC721DE3947C00270FBE /* Podcast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Podcast.m; sourceTree = "<group>"; };
 		D211FC741DE3954700270FBE /* PodcastParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PodcastParser.h; sourceTree = "<group>"; };
 		D211FC751DE3954700270FBE /* PodcastParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PodcastParser.m; sourceTree = "<group>"; };
+		D211FC781DE3A38800270FBE /* EpisodeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EpisodeListViewController.h; sourceTree = "<group>"; };
+		D211FC791DE3A38800270FBE /* EpisodeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EpisodeListViewController.m; sourceTree = "<group>"; };
+		D211FC7C1DE3A3CD00270FBE /* EpisodeListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EpisodeListTableViewCell.h; path = Meanwhile22/EpisodeListTableViewCell.h; sourceTree = "<group>"; };
+		D211FC7D1DE3A3CD00270FBE /* EpisodeListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EpisodeListTableViewCell.m; path = Meanwhile22/EpisodeListTableViewCell.m; sourceTree = "<group>"; };
+		D211FC7F1DE4DB2D00270FBE /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		D293693B1DDD8873002851D5 /* Meanwhile22.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meanwhile22.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D293693F1DDD8873002851D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D29369411DDD8873002851D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -135,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D211FC801DE4DB2D00270FBE /* AVKit.framework in Frameworks */,
 				D211FC6A1DE2B03200270FBE /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,6 +188,7 @@
 		D211FC681DE2B03200270FBE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D211FC7F1DE4DB2D00270FBE /* AVKit.framework */,
 				D211FC691DE2B03200270FBE /* AVFoundation.framework */,
 			);
 			name = Frameworks;
@@ -228,6 +238,16 @@
 			name = Podcast;
 			sourceTree = "<group>";
 		};
+		D211FC7B1DE3A3A300270FBE /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				D211FC7C1DE3A3CD00270FBE /* EpisodeListTableViewCell.h */,
+				D211FC7D1DE3A3CD00270FBE /* EpisodeListTableViewCell.m */,
+			);
+			name = TableViewCells;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		D29369321DDD8873002851D5 = {
 			isa = PBXGroup;
 			children = (
@@ -256,10 +276,13 @@
 				D29369421DDD8873002851D5 /* AppDelegate.m */,
 				D211FC771DE397A200270FBE /* Podcast */,
 				D211FC2D1DE2AC8A00270FBE /* Animations */,
+				D211FC7B1DE3A3A300270FBE /* TableViewCells */,
 				D29369711DDD8965002851D5 /* IntroViewController.h */,
 				D29369721DDD8965002851D5 /* IntroViewController.m */,
 				D29369741DDD897D002851D5 /* HomeViewController.h */,
 				D29369751DDD897D002851D5 /* HomeViewController.m */,
+				D211FC781DE3A38800270FBE /* EpisodeListViewController.h */,
+				D211FC791DE3A38800270FBE /* EpisodeListViewController.m */,
 				D29369471DDD8873002851D5 /* Main.storyboard */,
 				D29369771DDD8E65002851D5 /* Assets */,
 				D293694A1DDD8873002851D5 /* Assets.xcassets */,
@@ -474,6 +497,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D29369431DDD8873002851D5 /* AppDelegate.m in Sources */,
+				D211FC7A1DE3A38800270FBE /* EpisodeListViewController.m in Sources */,
 				D29369731DDD8965002851D5 /* IntroViewController.m in Sources */,
 				D211FC731DE3947C00270FBE /* Podcast.m in Sources */,
 				D211FC6D1DE2B95A00270FBE /* M22HomeAnimationView.m in Sources */,
@@ -481,6 +505,7 @@
 				D211FC761DE3954700270FBE /* PodcastParser.m in Sources */,
 				D29369401DDD8873002851D5 /* main.m in Sources */,
 				D29369761DDD897D002851D5 /* HomeViewController.m in Sources */,
+				D211FC7E1DE3A3CD00270FBE /* EpisodeListTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
