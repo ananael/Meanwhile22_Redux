@@ -12,6 +12,8 @@
 #import "Podcast.h"
 #import "PodcastParser.h"
 #import "EpisodeListTableViewCell.h"
+#import "EpisodePlayerViewController.h"
+#import "MethodsCache.h"
 
 @interface EpisodeListViewController ()
 
@@ -44,6 +46,10 @@
     self.tableView.dataSource = self;
     
     [self dynamicCellHeight];
+    
+    MethodsCache *methods = [MethodsCache new];
+    [methods createViewBorderWidth:2.0 color:[UIColor blackColor] forArray:[self viewArray]];
+    [methods createButtonBorderWidth:2.0 color:[UIColor blackColor] forArray:[self buttonArray]];
     
     //Initializing data arrays
     self.podcastArray = [NSMutableArray new];
@@ -95,6 +101,18 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(NSArray *)viewArray
+{
+    NSArray *views = @[self.pageAccent];
+    return views;
+}
+
+-(NSArray *)buttonArray
+{
+    NSArray *buttons = @[self.previousButton];
+    return buttons;
 }
 
 -(void)dynamicCellHeight
@@ -194,23 +212,24 @@
     return episode;
  }
 
-/*
- // Override to support conditional editing of the table view.
- - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
- // Return NO if you do not want the specified item to be editable.
- return YES;
- }
- */
-
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    if ([segue.identifier isEqualToString:@"playerSegue"])
+    {
+        EpisodePlayerViewController *playerVC = segue.destinationViewController;
+        NSIndexPath *selectedPath = [self.tableView indexPathForSelectedRow];
+        
+        playerVC.episode = self.podcastArray[selectedPath.row];
+        playerVC.episodeTitle = self.podcastTitles[selectedPath.row];
+        playerVC.episodeSubtitle = self.podcastSubtitles[selectedPath.row];
+        
+    }
 }
-*/
 
 - (IBAction)previousTapped:(id)sender
 {

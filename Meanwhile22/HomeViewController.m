@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import "M22HomeAnimationView.h"
+#import "MethodsCache.h"
 
 @interface HomeViewController ()
 
@@ -31,8 +32,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.homeAnimation.layer.borderWidth = 2.0;
-    self.homeAnimation.layer.borderColor = [UIColor blackColor].CGColor;
+    MethodsCache *methods = [MethodsCache new];
+    [methods createViewBorderWidth:2.0 color:[UIColor blackColor] forArray:[self viewArray]];
+    [methods createButtonBorderWidth:2.0 color:[UIColor blackColor] forArray:[self buttonArray]];
     [self.homeAnimation addM22HomeAnimation];
     
     
@@ -41,6 +43,18 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(NSArray *)viewArray
+{
+    NSArray *views = @[self.homeAnimation];
+    return views;
+}
+
+-(NSArray *)buttonArray
+{
+    NSArray *buttons = @[self.podcastButton, self.hostButton];
+    return buttons;
 }
 
 /*
