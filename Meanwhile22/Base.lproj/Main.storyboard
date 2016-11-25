@@ -89,14 +89,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gl-CO-6kA" userLabel="twitterButton">
-                                <rect key="frame" x="235.5" y="606" width="50" height="41"/>
+                                <rect key="frame" x="235" y="606" width="50" height="41"/>
                                 <state key="normal" image="twitter logo.png"/>
                                 <connections>
                                     <action selector="twitterTapped:" destination="I57-be-lYR" eventType="touchUpInside" id="oSF-i2-Ofv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcK-1T-gVz" userLabel="facebookButton">
-                                <rect key="frame" x="305.5" y="606" width="49.5" height="41"/>
+                                <rect key="frame" x="305" y="606" width="50" height="41"/>
                                 <state key="normal" image="facebook logo.png"/>
                                 <connections>
                                     <action selector="facebookTapped:" destination="I57-be-lYR" eventType="touchUpInside" id="jv2-Xj-BSl"/>
@@ -330,6 +330,9 @@
                                         <rect key="frame" x="5" y="5" width="325" height="156"/>
                                         <color key="backgroundColor" red="0.95008441359999996" green="0.3755196931" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hNm-q0-xY2" userLabel="placeholderContainer">
+                                        <rect key="frame" x="5" y="5" width="325" height="145"/>
+                                    </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dlH-fr-0FI" userLabel="timeContainer">
                                         <rect key="frame" x="5" y="171" width="325" height="40.5"/>
                                         <subviews>
@@ -343,7 +346,7 @@
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7v-i1-yZM" userLabel="remainingLabel">
-                                                <rect key="frame" x="173.5" y="0.0" width="146.5" height="40.5"/>
+                                                <rect key="frame" x="173" y="0.0" width="147" height="40.5"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -352,6 +355,7 @@
                                                 </variation>
                                             </label>
                                         </subviews>
+                                        <color key="backgroundColor" red="0.60392156860000001" green="0.80392156859999997" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="h7v-i1-yZM" firstAttribute="height" secondItem="ihQ-c3-Kil" secondAttribute="height" id="5a4-Sk-7fr"/>
                                             <constraint firstAttribute="trailing" secondItem="h7v-i1-yZM" secondAttribute="trailing" constant="5" id="P6K-8g-JRt"/>
@@ -363,11 +367,16 @@
                                             <constraint firstItem="ihQ-c3-Kil" firstAttribute="width" secondItem="dlH-fr-0FI" secondAttribute="width" multiplier="0.45" id="llT-FJ-TQU"/>
                                         </constraints>
                                     </view>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="D3Q-ON-lxD">
+                                        <rect key="frame" x="3" y="150" width="329" height="31"/>
+                                        <color key="minimumTrackTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="maximumTrackTintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </slider>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ikv-j8-kF2" userLabel="middleContainer">
-                                        <rect key="frame" x="5" y="222" width="325" height="233"/>
+                                        <rect key="frame" x="5" y="221" width="325" height="233.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3h-cF-rf7" userLabel="pauseButton">
-                                                <rect key="frame" x="0.0" y="0.0" width="101" height="112"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="101" height="112.5"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="pause"/>
                                                 <connections>
@@ -375,7 +384,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBU-8l-5dM" userLabel="stopButton">
-                                                <rect key="frame" x="224" y="0.0" width="101" height="112"/>
+                                                <rect key="frame" x="224" y="0.0" width="101" height="112.5"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="stop"/>
                                                 <connections>
@@ -383,7 +392,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7e-SZ-dfd" userLabel="minusButton">
-                                                <rect key="frame" x="0.0" y="121.5" width="101" height="111.5"/>
+                                                <rect key="frame" x="0.0" y="121.5" width="101" height="112"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="30 -"/>
                                                 <connections>
@@ -391,7 +400,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eR5-yH-auS" userLabel="plusButton">
-                                                <rect key="frame" x="224" y="121.5" width="101" height="111.5"/>
+                                                <rect key="frame" x="224" y="121.5" width="101" height="112"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="30 +"/>
                                                 <connections>
@@ -399,7 +408,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ped-9T-A7N" userLabel="playButton">
-                                                <rect key="frame" x="112" y="0.0" width="101" height="233"/>
+                                                <rect key="frame" x="112" y="0.0" width="101" height="233.5"/>
                                                 <color key="backgroundColor" red="0.60392156860000001" green="0.80392156859999997" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="play"/>
                                                 <connections>
@@ -431,10 +440,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G2M-sq-U6T" userLabel="bottomContainer">
-                                        <rect key="frame" x="5" y="465" width="325" height="157"/>
+                                        <rect key="frame" x="5" y="464.5" width="325" height="157.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lh-cU-hGj" userLabel="titleLabel">
-                                                <rect key="frame" x="5" y="0.0" width="315" height="23.5"/>
+                                                <rect key="frame" x="5" y="0.0" width="315" height="24"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -443,13 +452,13 @@
                                                 </variation>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u64-fF-RNG" userLabel="scrollContainer">
-                                                <rect key="frame" x="0.0" y="23.5" width="325" height="133"/>
+                                                <rect key="frame" x="0.0" y="24" width="325" height="133.5"/>
                                                 <subviews>
                                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q13-9R-7dO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="325" height="133"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="325" height="133.5"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1s-M6-Roc" userLabel="contentView">
-                                                                <rect key="frame" x="5.5" y="0.0" width="315" height="275"/>
+                                                                <rect key="frame" x="5" y="0.0" width="315" height="275"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wir-sF-Fqo" userLabel="summaryLabel">
                                                                         <rect key="frame" x="0.0" y="0.0" width="315" height="20.5"/>
@@ -488,7 +497,7 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The story so far ..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gD-a3-PEZ" userLabel="soFarLabel">
-                                                <rect key="frame" x="224" y="0.0" width="101" height="30.5"/>
+                                                <rect key="frame" x="224" y="0.0" width="101" height="30"/>
                                                 <color key="backgroundColor" red="0.99215686274509807" green="0.89803921568627454" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="11"/>
                                                 <nil key="textColor"/>
@@ -519,6 +528,9 @@
                                     <constraint firstItem="dlH-fr-0FI" firstAttribute="width" secondItem="m3v-Dn-bMF" secondAttribute="width" multiplier="0.97" id="1UT-Yy-It2"/>
                                     <constraint firstItem="dlH-fr-0FI" firstAttribute="centerX" secondItem="m3v-Dn-bMF" secondAttribute="centerX" id="6UX-mt-Ckh"/>
                                     <constraint firstItem="7Pd-TI-0H3" firstAttribute="height" secondItem="m3v-Dn-bMF" secondAttribute="height" multiplier="0.25" id="7qf-8Z-EsW"/>
+                                    <constraint firstItem="hNm-q0-xY2" firstAttribute="height" secondItem="m3v-Dn-bMF" secondAttribute="height" multiplier="0.231" id="8K4-gp-1SK"/>
+                                    <constraint firstItem="D3Q-ON-lxD" firstAttribute="centerX" secondItem="m3v-Dn-bMF" secondAttribute="centerX" id="9oE-K0-0f5"/>
+                                    <constraint firstItem="D3Q-ON-lxD" firstAttribute="top" secondItem="hNm-q0-xY2" secondAttribute="bottom" id="Aab-aX-C2h"/>
                                     <constraint firstItem="G2M-sq-U6T" firstAttribute="height" secondItem="m3v-Dn-bMF" secondAttribute="height" multiplier="0.25" id="CF1-0R-WW7"/>
                                     <constraint firstItem="7Pd-TI-0H3" firstAttribute="top" secondItem="m3v-Dn-bMF" secondAttribute="top" constant="5" id="CP9-vv-cdr"/>
                                     <constraint firstItem="7Pd-TI-0H3" firstAttribute="centerX" secondItem="m3v-Dn-bMF" secondAttribute="centerX" id="CVo-5I-UpF"/>
@@ -526,21 +538,29 @@
                                     <constraint firstItem="ikv-j8-kF2" firstAttribute="centerX" secondItem="m3v-Dn-bMF" secondAttribute="centerX" id="JMm-UF-tvE"/>
                                     <constraint firstItem="dlH-fr-0FI" firstAttribute="top" secondItem="7Pd-TI-0H3" secondAttribute="bottom" constant="10" id="NdS-AP-05W"/>
                                     <constraint firstItem="G2M-sq-U6T" firstAttribute="top" secondItem="ikv-j8-kF2" secondAttribute="bottom" constant="10" id="TX6-j2-MZR"/>
+                                    <constraint firstItem="hNm-q0-xY2" firstAttribute="width" secondItem="m3v-Dn-bMF" secondAttribute="width" multiplier="0.97" id="Whm-0y-blq"/>
+                                    <constraint firstItem="hNm-q0-xY2" firstAttribute="top" secondItem="m3v-Dn-bMF" secondAttribute="top" constant="5" id="ZUU-FA-dD6"/>
                                     <constraint firstItem="ikv-j8-kF2" firstAttribute="height" secondItem="m3v-Dn-bMF" secondAttribute="height" multiplier="0.372" id="caK-hW-965"/>
                                     <constraint firstItem="7Pd-TI-0H3" firstAttribute="width" secondItem="m3v-Dn-bMF" secondAttribute="width" multiplier="0.97" id="ds7-T8-heQ"/>
                                     <constraint firstItem="G2M-sq-U6T" firstAttribute="centerX" secondItem="m3v-Dn-bMF" secondAttribute="centerX" id="k4j-Ij-WEv"/>
                                     <constraint firstItem="ikv-j8-kF2" firstAttribute="width" secondItem="m3v-Dn-bMF" secondAttribute="width" multiplier="0.97" id="kUn-wM-Lv2"/>
                                     <constraint firstItem="ikv-j8-kF2" firstAttribute="height" secondItem="m3v-Dn-bMF" secondAttribute="height" multiplier="0.394" id="lqI-6h-Jfa"/>
+                                    <constraint firstItem="hNm-q0-xY2" firstAttribute="centerX" secondItem="m3v-Dn-bMF" secondAttribute="centerX" id="mGH-Mm-DqN"/>
+                                    <constraint firstItem="hNm-q0-xY2" firstAttribute="height" secondItem="m3v-Dn-bMF" secondAttribute="height" multiplier="0.24" id="oYE-nO-GFZ"/>
                                     <constraint firstItem="G2M-sq-U6T" firstAttribute="width" secondItem="m3v-Dn-bMF" secondAttribute="width" multiplier="0.97" id="rrI-Cl-gcs"/>
+                                    <constraint firstItem="D3Q-ON-lxD" firstAttribute="width" secondItem="m3v-Dn-bMF" secondAttribute="width" multiplier="0.97" id="yxR-oq-XH3"/>
                                     <constraint firstItem="dlH-fr-0FI" firstAttribute="height" secondItem="m3v-Dn-bMF" secondAttribute="height" multiplier="0.064" id="zh0-26-Dl3"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="oYE-nO-GFZ"/>
                                         <exclude reference="lqI-6h-Jfa"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <mask key="constraints">
+                                        <exclude reference="8K4-gp-1SK"/>
+                                        <include reference="oYE-nO-GFZ"/>
                                         <exclude reference="caK-hW-965"/>
                                         <include reference="lqI-6h-Jfa"/>
                                     </mask>
@@ -588,6 +608,7 @@
                         <outlet property="plusButton" destination="eR5-yH-auS" id="E8V-3S-2Bx"/>
                         <outlet property="previousButton" destination="fON-lF-AaH" id="nKF-e5-3Km"/>
                         <outlet property="remainingLabel" destination="h7v-i1-yZM" id="aAG-70-m97"/>
+                        <outlet property="slider" destination="D3Q-ON-lxD" id="7Pp-iy-e4F"/>
                         <outlet property="soFarLabel" destination="0gD-a3-PEZ" id="YwN-ES-WFX"/>
                         <outlet property="stopButton" destination="EBU-8l-5dM" id="BUH-Dn-GfV"/>
                         <outlet property="summaryLabel" destination="wir-sF-Fqo" id="ISf-PM-Jfs"/>
