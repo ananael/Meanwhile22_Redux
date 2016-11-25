@@ -25,8 +25,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-//    [self.introAnimation addM22IntroAnimation];
-//    [self introTimer];
     [self launchIntro];
     
 }
@@ -76,6 +74,7 @@
     [self.introAnimation addM22IntroAnimation];
     [self introTimer];
     [self fxTimer];
+    //[self introFX];
 }
 
 

@@ -297,6 +297,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundImage" destination="QN7-rF-evB" id="jSz-wX-NGY"/>
                         <outlet property="bannerContainer" destination="lMg-1X-cLZ" id="xbd-6B-GDC"/>
                         <outlet property="bannerImage" destination="A3K-lB-krw" id="Gus-ub-O2i"/>
                         <outlet property="pageAccent" destination="kNe-UN-wHV" id="5Wb-dd-FdR"/>

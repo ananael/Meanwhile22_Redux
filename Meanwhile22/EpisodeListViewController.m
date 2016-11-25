@@ -25,6 +25,7 @@
 
 @property Podcast *episode;
 
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 @property (weak, nonatomic) IBOutlet UIView *pageAccent;
 @property (weak, nonatomic) IBOutlet UIView *bannerContainer;
 @property (weak, nonatomic) IBOutlet UIImageView *bannerImage;
@@ -44,8 +45,12 @@
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.tableView.backgroundColor = [UIColor clearColor];
     
     [self dynamicCellHeight];
+    
+    self.backgroundImage.image = [UIImage imageNamed:@"paper C lite"];
+    self.pageAccent.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.7];
     
     MethodsCache *methods = [MethodsCache new];
     [methods createViewBorderWidth:2.0 color:[UIColor blackColor] forArray:[self viewArray]];

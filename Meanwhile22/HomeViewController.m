@@ -32,6 +32,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.backgroundImage.image = [UIImage imageNamed:@"paper B lite"];
+    
     MethodsCache *methods = [MethodsCache new];
     [methods createViewBorderWidth:2.0 color:[UIColor blackColor] forArray:[self viewArray]];
     [methods createButtonBorderWidth:2.0 color:[UIColor blackColor] forArray:[self buttonArray]];

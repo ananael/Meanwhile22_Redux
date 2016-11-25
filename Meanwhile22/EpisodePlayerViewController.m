@@ -55,8 +55,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.backgroundImage.image = [UIImage imageNamed:@"paper A lite"];
+    self.pageAccent.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.7];
+    
     MethodsCache *methods = [MethodsCache new];
-    [methods createViewBorderWidth:2.0 color:[UIColor blackColor] forArray:[self viewArray]];
+    [methods createViewBorderWidth:2.0 color:[UIColor blackColor] forArray:[self viewArray1]];
+    [methods createViewBorderWidth:1.0 color:[UIColor blackColor] forArray:[self viewArray2]];
     [methods createButtonBorderWidth:2.0 color:[UIColor blackColor] forArray:[self buttonArray]];
     [methods createLabelBorderWidth:1.0 color:[UIColor blackColor] forArray:[self labelArray]];
     
@@ -146,9 +150,15 @@
     // Dispose of any resources that can be recreated.
 }
 
--(NSArray *)viewArray
+-(NSArray *)viewArray1
 {
     NSArray *views = @[self.timeContainer, self.bottomContainer];
+    return views;
+}
+
+-(NSArray *)viewArray2
+{
+    NSArray *views = @[self.pageAccent];
     return views;
 }
 
