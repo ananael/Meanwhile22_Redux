@@ -50,6 +50,23 @@
 		D211FC911DE7F19500270FBE /* paper A lite@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D211FC8E1DE7F19500270FBE /* paper A lite@2x.png */; };
 		D211FC921DE7F19500270FBE /* paper B lite@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D211FC8F1DE7F19500270FBE /* paper B lite@2x.png */; };
 		D211FC931DE7F19500270FBE /* paper C lite@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D211FC901DE7F19500270FBE /* paper C lite@2x.png */; };
+		D211FC961DE8E95300270FBE /* host button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D211FC941DE8E95300270FBE /* host button@2x.png */; };
+		D211FC971DE8E95300270FBE /* host button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D211FC951DE8E95300270FBE /* host button@3x.png */; };
+		D211FC9A1DE8E97E00270FBE /* vault button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D211FC981DE8E97E00270FBE /* vault button@2x.png */; };
+		D211FC9B1DE8E97E00270FBE /* vault button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D211FC991DE8E97E00270FBE /* vault button@3x.png */; };
+		D211FCAB1DE8EB0700270FBE /* minus button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D211FCA11DE8EB0700270FBE /* minus button@2x.png */; };
+		D211FCAC1DE8EB0700270FBE /* minus button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D211FCA21DE8EB0700270FBE /* minus button@3x.png */; };
+		D211FCAD1DE8EB0700270FBE /* pause button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D211FCA31DE8EB0700270FBE /* pause button@2x.png */; };
+		D211FCAE1DE8EB0700270FBE /* pause button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D211FCA41DE8EB0700270FBE /* pause button@3x.png */; };
+		D211FCAF1DE8EB0700270FBE /* play button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D211FCA51DE8EB0700270FBE /* play button@2x.png */; };
+		D211FCB01DE8EB0700270FBE /* play button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D211FCA61DE8EB0700270FBE /* play button@3x.png */; };
+		D211FCB11DE8EB0700270FBE /* plus button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D211FCA71DE8EB0700270FBE /* plus button@2x.png */; };
+		D211FCB21DE8EB0700270FBE /* plus button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D211FCA81DE8EB0700270FBE /* plus button@3x.png */; };
+		D211FCB31DE8EB0700270FBE /* stop button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D211FCA91DE8EB0700270FBE /* stop button@2x.png */; };
+		D211FCB41DE8EB0700270FBE /* stop button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D211FCAA1DE8EB0700270FBE /* stop button@3x.png */; };
+		D211FCB71DE8ED4500270FBE /* vault banner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D211FCB51DE8ED4500270FBE /* vault banner@2x.png */; };
+		D211FCB81DE8ED4500270FBE /* vault banner@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D211FCB61DE8ED4500270FBE /* vault banner@3x.png */; };
+		D211FCBB1DE9E83F00270FBE /* HostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D211FCBA1DE9E83F00270FBE /* HostsViewController.m */; };
 		D29369401DDD8873002851D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D293693F1DDD8873002851D5 /* main.m */; };
 		D29369431DDD8873002851D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D29369421DDD8873002851D5 /* AppDelegate.m */; };
 		D29369491DDD8873002851D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D29369471DDD8873002851D5 /* Main.storyboard */; };
@@ -132,6 +149,24 @@
 		D211FC8E1DE7F19500270FBE /* paper A lite@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paper A lite@2x.png"; sourceTree = "<group>"; };
 		D211FC8F1DE7F19500270FBE /* paper B lite@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paper B lite@2x.png"; sourceTree = "<group>"; };
 		D211FC901DE7F19500270FBE /* paper C lite@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paper C lite@2x.png"; sourceTree = "<group>"; };
+		D211FC941DE8E95300270FBE /* host button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "host button@2x.png"; sourceTree = "<group>"; };
+		D211FC951DE8E95300270FBE /* host button@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "host button@3x.png"; sourceTree = "<group>"; };
+		D211FC981DE8E97E00270FBE /* vault button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vault button@2x.png"; sourceTree = "<group>"; };
+		D211FC991DE8E97E00270FBE /* vault button@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vault button@3x.png"; sourceTree = "<group>"; };
+		D211FCA11DE8EB0700270FBE /* minus button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "minus button@2x.png"; sourceTree = "<group>"; };
+		D211FCA21DE8EB0700270FBE /* minus button@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "minus button@3x.png"; sourceTree = "<group>"; };
+		D211FCA31DE8EB0700270FBE /* pause button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause button@2x.png"; sourceTree = "<group>"; };
+		D211FCA41DE8EB0700270FBE /* pause button@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause button@3x.png"; sourceTree = "<group>"; };
+		D211FCA51DE8EB0700270FBE /* play button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play button@2x.png"; sourceTree = "<group>"; };
+		D211FCA61DE8EB0700270FBE /* play button@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play button@3x.png"; sourceTree = "<group>"; };
+		D211FCA71DE8EB0700270FBE /* plus button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus button@2x.png"; sourceTree = "<group>"; };
+		D211FCA81DE8EB0700270FBE /* plus button@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus button@3x.png"; sourceTree = "<group>"; };
+		D211FCA91DE8EB0700270FBE /* stop button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stop button@2x.png"; sourceTree = "<group>"; };
+		D211FCAA1DE8EB0700270FBE /* stop button@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stop button@3x.png"; sourceTree = "<group>"; };
+		D211FCB51DE8ED4500270FBE /* vault banner@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vault banner@2x.png"; sourceTree = "<group>"; };
+		D211FCB61DE8ED4500270FBE /* vault banner@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vault banner@3x.png"; sourceTree = "<group>"; };
+		D211FCB91DE9E83F00270FBE /* HostsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostsViewController.h; sourceTree = "<group>"; };
+		D211FCBA1DE9E83F00270FBE /* HostsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostsViewController.m; sourceTree = "<group>"; };
 		D293693B1DDD8873002851D5 /* Meanwhile22.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meanwhile22.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D293693F1DDD8873002851D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D29369411DDD8873002851D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -267,8 +302,22 @@
 		D211FC871DE7EAEA00270FBE /* button images */ = {
 			isa = PBXGroup;
 			children = (
+				D211FCA11DE8EB0700270FBE /* minus button@2x.png */,
+				D211FCA21DE8EB0700270FBE /* minus button@3x.png */,
+				D211FCA31DE8EB0700270FBE /* pause button@2x.png */,
+				D211FCA41DE8EB0700270FBE /* pause button@3x.png */,
+				D211FCA51DE8EB0700270FBE /* play button@2x.png */,
+				D211FCA61DE8EB0700270FBE /* play button@3x.png */,
+				D211FCA71DE8EB0700270FBE /* plus button@2x.png */,
+				D211FCA81DE8EB0700270FBE /* plus button@3x.png */,
+				D211FCA91DE8EB0700270FBE /* stop button@2x.png */,
+				D211FCAA1DE8EB0700270FBE /* stop button@3x.png */,
+				D211FC941DE8E95300270FBE /* host button@2x.png */,
+				D211FC951DE8E95300270FBE /* host button@3x.png */,
 				D29369781DDD8E72002851D5 /* facebook logo@2x.png */,
 				D29369791DDD8E72002851D5 /* twitter logo@2x.png */,
+				D211FC981DE8E97E00270FBE /* vault button@2x.png */,
+				D211FC991DE8E97E00270FBE /* vault button@3x.png */,
 			);
 			name = "button images";
 			sourceTree = "<group>";
@@ -290,6 +339,15 @@
 				D211FC901DE7F19500270FBE /* paper C lite@2x.png */,
 			);
 			name = "background images";
+			sourceTree = "<group>";
+		};
+		D211FC9C1DE8EACA00270FBE /* banner images */ = {
+			isa = PBXGroup;
+			children = (
+				D211FCB51DE8ED4500270FBE /* vault banner@2x.png */,
+				D211FCB61DE8ED4500270FBE /* vault banner@3x.png */,
+			);
+			name = "banner images";
 			sourceTree = "<group>";
 		};
 		D29369321DDD8873002851D5 = {
@@ -331,6 +389,8 @@
 				D211FC791DE3A38800270FBE /* EpisodeListViewController.m */,
 				D211FC811DE6193200270FBE /* EpisodePlayerViewController.h */,
 				D211FC821DE6193200270FBE /* EpisodePlayerViewController.m */,
+				D211FCB91DE9E83F00270FBE /* HostsViewController.h */,
+				D211FCBA1DE9E83F00270FBE /* HostsViewController.m */,
 				D29369471DDD8873002851D5 /* Main.storyboard */,
 				D29369771DDD8E65002851D5 /* Assets */,
 				D293694A1DDD8873002851D5 /* Assets.xcassets */,
@@ -373,6 +433,7 @@
 				D211FC661DE2AF7900270FBE /* M22 Intro.mp3 */,
 				D211FC2E1DE2ACAB00270FBE /* animation images */,
 				D211FC8D1DE7F17F00270FBE /* background images */,
+				D211FC9C1DE8EACA00270FBE /* banner images */,
 				D211FC871DE7EAEA00270FBE /* button images */,
 				D211FC8C1DE7EB1000270FBE /* other images */,
 			);
@@ -488,14 +549,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D211FC9A1DE8E97E00270FBE /* vault button@2x.png in Resources */,
+				D211FCAC1DE8EB0700270FBE /* minus button@3x.png in Resources */,
 				D211FC591DE2ACEA00270FBE /* flash@2x.png in Resources */,
 				D211FC8B1DE7EB0700270FBE /* blue rocket@2x.png in Resources */,
 				D211FC8A1DE7EB0700270FBE /* red rocket@2x.png in Resources */,
 				D211FC531DE2ACEA00270FBE /* burst@2x.png in Resources */,
+				D211FCB41DE8EB0700270FBE /* stop button@3x.png in Resources */,
 				D211FC5A1DE2ACEA00270FBE /* meanwhile.png in Resources */,
+				D211FC961DE8E95300270FBE /* host button@2x.png in Resources */,
+				D211FC9B1DE8E97E00270FBE /* vault button@3x.png in Resources */,
+				D211FCAE1DE8EB0700270FBE /* pause button@3x.png in Resources */,
 				D211FC611DE2ACEA00270FBE /* orange bkgd@2x.png in Resources */,
 				D293697B1DDD8E72002851D5 /* twitter logo@2x.png in Resources */,
 				D211FC5F1DE2ACEA00270FBE /* mfg@2x.png in Resources */,
+				D211FCB11DE8EB0700270FBE /* plus button@2x.png in Resources */,
 				D211FC551DE2ACEA00270FBE /* cap star@2x.png in Resources */,
 				D211FC5B1DE2ACEA00270FBE /* meanwhile@2x.png in Resources */,
 				D211FC671DE2AF7900270FBE /* M22 Intro.mp3 in Resources */,
@@ -505,24 +573,33 @@
 				D211FC4D1DE2ACEA00270FBE /* 22PL@2x.png in Resources */,
 				D211FC4C1DE2ACEA00270FBE /* 22PL.png in Resources */,
 				D211FC911DE7F19500270FBE /* paper A lite@2x.png in Resources */,
+				D211FC971DE8E95300270FBE /* host button@3x.png in Resources */,
 				D293694B1DDD8873002851D5 /* Assets.xcassets in Resources */,
 				D211FC4E1DE2ACEA00270FBE /* base.png in Resources */,
 				D211FC5E1DE2ACEA00270FBE /* mfg.png in Resources */,
+				D211FCB01DE8EB0700270FBE /* play button@3x.png in Resources */,
 				D211FC651DE2ACEA00270FBE /* ralf@2x.png in Resources */,
 				D211FC501DE2ACEA00270FBE /* blurb.png in Resources */,
+				D211FCB21DE8EB0700270FBE /* plus button@3x.png in Resources */,
 				D211FC521DE2ACEA00270FBE /* burst.png in Resources */,
+				D211FCB81DE8ED4500270FBE /* vault banner@3x.png in Resources */,
 				D211FC4F1DE2ACEA00270FBE /* base@2x.png in Resources */,
 				D211FC621DE2ACEA00270FBE /* ralf bird.png in Resources */,
+				D211FCB31DE8EB0700270FBE /* stop button@2x.png in Resources */,
 				D211FC5D1DE2ACEA00270FBE /* mfg bolt@2x.png in Resources */,
 				D211FC6F1DE2B96900270FBE /* M22HomeAnimation.xcassets in Resources */,
 				D211FC581DE2ACEA00270FBE /* flash.png in Resources */,
 				D211FC541DE2ACEA00270FBE /* cap star.png in Resources */,
+				D211FCAF1DE8EB0700270FBE /* play button@2x.png in Resources */,
 				D211FC511DE2ACEA00270FBE /* blurb@2x.png in Resources */,
 				D211FC571DE2ACEA00270FBE /* cap@2x.png in Resources */,
 				D211FC601DE2ACEA00270FBE /* orange bkgd.png in Resources */,
 				D211FC561DE2ACEA00270FBE /* cap.png in Resources */,
 				D211FC641DE2ACEA00270FBE /* ralf.png in Resources */,
 				D211FC5C1DE2ACEA00270FBE /* mfg bolt.png in Resources */,
+				D211FCAD1DE8EB0700270FBE /* pause button@2x.png in Resources */,
+				D211FCAB1DE8EB0700270FBE /* minus button@2x.png in Resources */,
+				D211FCB71DE8ED4500270FBE /* vault banner@2x.png in Resources */,
 				D211FC931DE7F19500270FBE /* paper C lite@2x.png in Resources */,
 				D29369491DDD8873002851D5 /* Main.storyboard in Resources */,
 				D211FC631DE2ACEA00270FBE /* ralf bird@2x.png in Resources */,
@@ -554,6 +631,7 @@
 				D211FC861DE6196200270FBE /* MethodsCache.m in Sources */,
 				D211FC7A1DE3A38800270FBE /* EpisodeListViewController.m in Sources */,
 				D29369731DDD8965002851D5 /* IntroViewController.m in Sources */,
+				D211FCBB1DE9E83F00270FBE /* HostsViewController.m in Sources */,
 				D211FC731DE3947C00270FBE /* Podcast.m in Sources */,
 				D211FC6D1DE2B95A00270FBE /* M22HomeAnimationView.m in Sources */,
 				D211FC311DE2ACBD00270FBE /* M22IntroAnimationView.m in Sources */,

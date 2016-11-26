@@ -34,11 +34,14 @@
     
     self.backgroundImage.image = [UIImage imageNamed:@"paper B lite"];
     
+    [self.homeAnimation addM22HomeAnimation];
+    
     MethodsCache *methods = [MethodsCache new];
     [methods createViewBorderWidth:2.0 color:[UIColor blackColor] forArray:[self viewArray]];
     [methods createButtonBorderWidth:2.0 color:[UIColor blackColor] forArray:[self buttonArray]];
-    [self.homeAnimation addM22HomeAnimation];
     
+    [self.podcastButton setBackgroundImage:[UIImage imageNamed:@"vault button"] forState:UIControlStateNormal];
+    [self.hostButton setBackgroundImage:[UIImage imageNamed:@"host button"] forState:UIControlStateNormal];
     
 }
 

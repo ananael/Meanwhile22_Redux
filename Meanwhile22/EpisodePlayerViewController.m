@@ -57,6 +57,12 @@
     
     self.backgroundImage.image = [UIImage imageNamed:@"paper A lite"];
     self.pageAccent.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.7];
+    [self.pauseButton setBackgroundImage:[UIImage imageNamed:@"pause button"] forState:UIControlStateNormal];
+    [self.stopButton setBackgroundImage:[UIImage imageNamed:@"stop button"] forState:UIControlStateNormal];
+    [self.minusButton setBackgroundImage:[UIImage imageNamed:@"minus button"] forState:UIControlStateNormal];
+    [self.plusButton setBackgroundImage:[UIImage imageNamed:@"plus button"] forState:UIControlStateNormal];
+    [self.playButton setBackgroundImage:[UIImage imageNamed:@"play button"] forState:UIControlStateNormal];
+    
     
     MethodsCache *methods = [MethodsCache new];
     [methods createViewBorderWidth:2.0 color:[UIColor blackColor] forArray:[self viewArray1]];

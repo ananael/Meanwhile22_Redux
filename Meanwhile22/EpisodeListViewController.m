@@ -51,6 +51,7 @@
     
     self.backgroundImage.image = [UIImage imageNamed:@"paper C lite"];
     self.pageAccent.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.7];
+    self.bannerImage.image = [UIImage imageNamed:@"vault banner"];
     
     MethodsCache *methods = [MethodsCache new];
     [methods createViewBorderWidth:2.0 color:[UIColor blackColor] forArray:[self viewArray]];
