@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2108AF41DECBBDD003C1A78 /* ralf button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2108AEE1DECBBDD003C1A78 /* ralf button@2x.png */; };
+		D2108AF51DECBBDD003C1A78 /* ralf button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2108AEF1DECBBDD003C1A78 /* ralf button@3x.png */; };
+		D2108AFC1DECC475003C1A78 /* cap button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2108AFA1DECC475003C1A78 /* cap button@2x.png */; };
+		D2108AFD1DECC475003C1A78 /* cap button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2108AFB1DECC475003C1A78 /* cap button@3x.png */; };
+		D2108B001DECD047003C1A78 /* mfg button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2108AFE1DECD047003C1A78 /* mfg button@2x.png */; };
+		D2108B011DECD047003C1A78 /* mfg button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2108AFF1DECD047003C1A78 /* mfg button@3x.png */; };
+		D2108B071DEFCD1D003C1A78 /* BiosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2108B061DEFCD1D003C1A78 /* BiosViewController.m */; };
 		D211FC311DE2ACBD00270FBE /* M22IntroAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = D211FC301DE2ACBD00270FBE /* M22IntroAnimationView.m */; };
 		D211FC4C1DE2ACEA00270FBE /* 22PL.png in Resources */ = {isa = PBXBuildFile; fileRef = D211FC321DE2ACEA00270FBE /* 22PL.png */; };
 		D211FC4D1DE2ACEA00270FBE /* 22PL@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D211FC331DE2ACEA00270FBE /* 22PL@2x.png */; };
@@ -78,6 +85,8 @@
 		D29369761DDD897D002851D5 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29369751DDD897D002851D5 /* HomeViewController.m */; };
 		D293697A1DDD8E72002851D5 /* facebook logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D29369781DDD8E72002851D5 /* facebook logo@2x.png */; };
 		D293697B1DDD8E72002851D5 /* twitter logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D29369791DDD8E72002851D5 /* twitter logo@2x.png */; };
+		D299111E1DF106E3001C627D /* Biographies.m in Sources */ = {isa = PBXBuildFile; fileRef = D299111D1DF106E3001C627D /* Biographies.m */; };
+		D29911211DF1CBB5001C627D /* SuggestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29911201DF1CBB5001C627D /* SuggestionsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +107,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D2108AEE1DECBBDD003C1A78 /* ralf button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ralf button@2x.png"; sourceTree = "<group>"; };
+		D2108AEF1DECBBDD003C1A78 /* ralf button@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ralf button@3x.png"; sourceTree = "<group>"; };
+		D2108AFA1DECC475003C1A78 /* cap button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cap button@2x.png"; sourceTree = "<group>"; };
+		D2108AFB1DECC475003C1A78 /* cap button@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cap button@3x.png"; sourceTree = "<group>"; };
+		D2108AFE1DECD047003C1A78 /* mfg button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mfg button@2x.png"; sourceTree = "<group>"; };
+		D2108AFF1DECD047003C1A78 /* mfg button@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mfg button@3x.png"; sourceTree = "<group>"; };
+		D2108B051DEFCD1D003C1A78 /* BiosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiosViewController.h; sourceTree = "<group>"; };
+		D2108B061DEFCD1D003C1A78 /* BiosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiosViewController.m; sourceTree = "<group>"; };
 		D211FC2F1DE2ACBD00270FBE /* M22IntroAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M22IntroAnimationView.h; sourceTree = "<group>"; };
 		D211FC301DE2ACBD00270FBE /* M22IntroAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M22IntroAnimationView.m; sourceTree = "<group>"; };
 		D211FC321DE2ACEA00270FBE /* 22PL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22PL.png; sourceTree = "<group>"; };
@@ -187,6 +204,10 @@
 		D29369751DDD897D002851D5 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		D29369781DDD8E72002851D5 /* facebook logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook logo@2x.png"; sourceTree = "<group>"; };
 		D29369791DDD8E72002851D5 /* twitter logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter logo@2x.png"; sourceTree = "<group>"; };
+		D299111C1DF106E3001C627D /* Biographies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Biographies.h; sourceTree = "<group>"; };
+		D299111D1DF106E3001C627D /* Biographies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Biographies.m; sourceTree = "<group>"; };
+		D299111F1DF1CBB5001C627D /* SuggestionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionsViewController.h; sourceTree = "<group>"; };
+		D29911201DF1CBB5001C627D /* SuggestionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +237,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D2108B021DECD052003C1A78 /* HostsVC buttons */ = {
+			isa = PBXGroup;
+			children = (
+				D2108AFA1DECC475003C1A78 /* cap button@2x.png */,
+				D2108AFB1DECC475003C1A78 /* cap button@3x.png */,
+				D2108AFE1DECD047003C1A78 /* mfg button@2x.png */,
+				D2108AFF1DECD047003C1A78 /* mfg button@3x.png */,
+				D2108AEE1DECBBDD003C1A78 /* ralf button@2x.png */,
+				D2108AEF1DECBBDD003C1A78 /* ralf button@3x.png */,
+			);
+			name = "HostsVC buttons";
+			sourceTree = "<group>";
+		};
+		D2108B031DECD08F003C1A78 /* PlayerVC buttons */ = {
+			isa = PBXGroup;
+			children = (
+				D211FCA11DE8EB0700270FBE /* minus button@2x.png */,
+				D211FCA21DE8EB0700270FBE /* minus button@3x.png */,
+				D211FCA31DE8EB0700270FBE /* pause button@2x.png */,
+				D211FCA41DE8EB0700270FBE /* pause button@3x.png */,
+				D211FCA51DE8EB0700270FBE /* play button@2x.png */,
+				D211FCA61DE8EB0700270FBE /* play button@3x.png */,
+				D211FCA71DE8EB0700270FBE /* plus button@2x.png */,
+				D211FCA81DE8EB0700270FBE /* plus button@3x.png */,
+				D211FCA91DE8EB0700270FBE /* stop button@2x.png */,
+				D211FCAA1DE8EB0700270FBE /* stop button@3x.png */,
+			);
+			name = "PlayerVC buttons";
+			sourceTree = "<group>";
+		};
+		D2108B041DECD0A6003C1A78 /* HomeVC buttons */ = {
+			isa = PBXGroup;
+			children = (
+				D211FC941DE8E95300270FBE /* host button@2x.png */,
+				D211FC951DE8E95300270FBE /* host button@3x.png */,
+				D29369781DDD8E72002851D5 /* facebook logo@2x.png */,
+				D29369791DDD8E72002851D5 /* twitter logo@2x.png */,
+				D211FC981DE8E97E00270FBE /* vault button@2x.png */,
+				D211FC991DE8E97E00270FBE /* vault button@3x.png */,
+			);
+			name = "HomeVC buttons";
+			sourceTree = "<group>";
+		};
 		D211FC2D1DE2AC8A00270FBE /* Animations */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,22 +366,9 @@
 		D211FC871DE7EAEA00270FBE /* button images */ = {
 			isa = PBXGroup;
 			children = (
-				D211FCA11DE8EB0700270FBE /* minus button@2x.png */,
-				D211FCA21DE8EB0700270FBE /* minus button@3x.png */,
-				D211FCA31DE8EB0700270FBE /* pause button@2x.png */,
-				D211FCA41DE8EB0700270FBE /* pause button@3x.png */,
-				D211FCA51DE8EB0700270FBE /* play button@2x.png */,
-				D211FCA61DE8EB0700270FBE /* play button@3x.png */,
-				D211FCA71DE8EB0700270FBE /* plus button@2x.png */,
-				D211FCA81DE8EB0700270FBE /* plus button@3x.png */,
-				D211FCA91DE8EB0700270FBE /* stop button@2x.png */,
-				D211FCAA1DE8EB0700270FBE /* stop button@3x.png */,
-				D211FC941DE8E95300270FBE /* host button@2x.png */,
-				D211FC951DE8E95300270FBE /* host button@3x.png */,
-				D29369781DDD8E72002851D5 /* facebook logo@2x.png */,
-				D29369791DDD8E72002851D5 /* twitter logo@2x.png */,
-				D211FC981DE8E97E00270FBE /* vault button@2x.png */,
-				D211FC991DE8E97E00270FBE /* vault button@3x.png */,
+				D2108B021DECD052003C1A78 /* HostsVC buttons */,
+				D2108B031DECD08F003C1A78 /* PlayerVC buttons */,
+				D2108B041DECD0A6003C1A78 /* HomeVC buttons */,
 			);
 			name = "button images";
 			sourceTree = "<group>";
@@ -378,6 +429,8 @@
 				D29369421DDD8873002851D5 /* AppDelegate.m */,
 				D211FC841DE6196200270FBE /* MethodsCache.h */,
 				D211FC851DE6196200270FBE /* MethodsCache.m */,
+				D299111C1DF106E3001C627D /* Biographies.h */,
+				D299111D1DF106E3001C627D /* Biographies.m */,
 				D211FC771DE397A200270FBE /* Podcast */,
 				D211FC2D1DE2AC8A00270FBE /* Animations */,
 				D211FC7B1DE3A3A300270FBE /* TableViewCells */,
@@ -391,6 +444,10 @@
 				D211FC821DE6193200270FBE /* EpisodePlayerViewController.m */,
 				D211FCB91DE9E83F00270FBE /* HostsViewController.h */,
 				D211FCBA1DE9E83F00270FBE /* HostsViewController.m */,
+				D2108B051DEFCD1D003C1A78 /* BiosViewController.h */,
+				D2108B061DEFCD1D003C1A78 /* BiosViewController.m */,
+				D299111F1DF1CBB5001C627D /* SuggestionsViewController.h */,
+				D29911201DF1CBB5001C627D /* SuggestionsViewController.m */,
 				D29369471DDD8873002851D5 /* Main.storyboard */,
 				D29369771DDD8E65002851D5 /* Assets */,
 				D293694A1DDD8873002851D5 /* Assets.xcassets */,
@@ -561,6 +618,7 @@
 				D211FC9B1DE8E97E00270FBE /* vault button@3x.png in Resources */,
 				D211FCAE1DE8EB0700270FBE /* pause button@3x.png in Resources */,
 				D211FC611DE2ACEA00270FBE /* orange bkgd@2x.png in Resources */,
+				D2108AF41DECBBDD003C1A78 /* ralf button@2x.png in Resources */,
 				D293697B1DDD8E72002851D5 /* twitter logo@2x.png in Resources */,
 				D211FC5F1DE2ACEA00270FBE /* mfg@2x.png in Resources */,
 				D211FCB11DE8EB0700270FBE /* plus button@2x.png in Resources */,
@@ -573,10 +631,13 @@
 				D211FC4D1DE2ACEA00270FBE /* 22PL@2x.png in Resources */,
 				D211FC4C1DE2ACEA00270FBE /* 22PL.png in Resources */,
 				D211FC911DE7F19500270FBE /* paper A lite@2x.png in Resources */,
+				D2108AF51DECBBDD003C1A78 /* ralf button@3x.png in Resources */,
 				D211FC971DE8E95300270FBE /* host button@3x.png in Resources */,
 				D293694B1DDD8873002851D5 /* Assets.xcassets in Resources */,
 				D211FC4E1DE2ACEA00270FBE /* base.png in Resources */,
 				D211FC5E1DE2ACEA00270FBE /* mfg.png in Resources */,
+				D2108AFD1DECC475003C1A78 /* cap button@3x.png in Resources */,
+				D2108B001DECD047003C1A78 /* mfg button@2x.png in Resources */,
 				D211FCB01DE8EB0700270FBE /* play button@3x.png in Resources */,
 				D211FC651DE2ACEA00270FBE /* ralf@2x.png in Resources */,
 				D211FC501DE2ACEA00270FBE /* blurb.png in Resources */,
@@ -590,6 +651,7 @@
 				D211FC6F1DE2B96900270FBE /* M22HomeAnimation.xcassets in Resources */,
 				D211FC581DE2ACEA00270FBE /* flash.png in Resources */,
 				D211FC541DE2ACEA00270FBE /* cap star.png in Resources */,
+				D2108B011DECD047003C1A78 /* mfg button@3x.png in Resources */,
 				D211FCAF1DE8EB0700270FBE /* play button@2x.png in Resources */,
 				D211FC511DE2ACEA00270FBE /* blurb@2x.png in Resources */,
 				D211FC571DE2ACEA00270FBE /* cap@2x.png in Resources */,
@@ -603,6 +665,7 @@
 				D211FC931DE7F19500270FBE /* paper C lite@2x.png in Resources */,
 				D29369491DDD8873002851D5 /* Main.storyboard in Resources */,
 				D211FC631DE2ACEA00270FBE /* ralf bird@2x.png in Resources */,
+				D2108AFC1DECC475003C1A78 /* cap button@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,8 +690,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D29911211DF1CBB5001C627D /* SuggestionsViewController.m in Sources */,
 				D29369431DDD8873002851D5 /* AppDelegate.m in Sources */,
+				D2108B071DEFCD1D003C1A78 /* BiosViewController.m in Sources */,
 				D211FC861DE6196200270FBE /* MethodsCache.m in Sources */,
+				D299111E1DF106E3001C627D /* Biographies.m in Sources */,
 				D211FC7A1DE3A38800270FBE /* EpisodeListViewController.m in Sources */,
 				D29369731DDD8965002851D5 /* IntroViewController.m in Sources */,
 				D211FCBB1DE9E83F00270FBE /* HostsViewController.m in Sources */,

@@ -39,6 +39,9 @@
     MethodsCache *methods = [MethodsCache new];
     [methods createButtonBorderWidth:2.0 color:[UIColor blackColor] forArray:[self buttonArray]];
     
+    [self.capButton setBackgroundImage:[UIImage imageNamed:@"cap button"] forState:UIControlStateNormal];
+    [self.mfgButton setBackgroundImage:[UIImage imageNamed:@"mfg button"] forState:UIControlStateNormal];
+    [self.ralfButton setBackgroundImage:[UIImage imageNamed:@"ralf button"] forState:UIControlStateNormal];
     
 }
 
@@ -65,17 +68,17 @@
 
 - (IBAction)capTapped:(id)sender
 {
-    
+    [[NSUserDefaults standardUserDefaults]setInteger:1 forKey:@"HostSaved"];
 }
 
 - (IBAction)mfgTapped:(id)sender
 {
-    
+    [[NSUserDefaults standardUserDefaults]setInteger:2 forKey:@"HostSaved"];
 }
 
 - (IBAction)ralfTapped:(id)sender
 {
-    
+    [[NSUserDefaults standardUserDefaults]setInteger:3 forKey:@"HostSaved"];
 }
 
 - (IBAction)previousTapped:(id)sender

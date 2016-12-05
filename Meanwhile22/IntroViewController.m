@@ -36,7 +36,7 @@
 
 -(void)fxTimer
 {
-    self.soundTimer = [NSTimer scheduledTimerWithTimeInterval:0.1
+    self.soundTimer = [NSTimer scheduledTimerWithTimeInterval:0.0
                                                   target:self
                                                 selector:@selector(introFX)
                                                 userInfo:nil
