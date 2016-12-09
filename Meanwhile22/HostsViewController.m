@@ -7,13 +7,14 @@
 //
 
 #import "HostsViewController.h"
+#import "M22HostsAnimationView.h"
 #import "MethodsCache.h"
 
 @interface HostsViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 @property (weak, nonatomic) IBOutlet UIView *pageAccent;
-@property (weak, nonatomic) IBOutlet UIView *hostAnimation;
+@property (weak, nonatomic) IBOutlet M22HostsAnimationView *hostsAnimation;
 @property (weak, nonatomic) IBOutlet UIButton *capButton;
 @property (weak, nonatomic) IBOutlet UIButton *mfgButton;
 @property (weak, nonatomic) IBOutlet UIButton *ralfButton;
@@ -38,6 +39,9 @@
     
     MethodsCache *methods = [MethodsCache new];
     [methods createButtonBorderWidth:2.0 color:[UIColor blackColor] forArray:[self buttonArray]];
+    [methods createViewBorderWidth:2.0 color:[UIColor blackColor] forArray:[self viewArray]];
+    
+    [self.hostsAnimation addM22HostsAnimation];
     
     [self.capButton setBackgroundImage:[UIImage imageNamed:@"cap button"] forState:UIControlStateNormal];
     [self.mfgButton setBackgroundImage:[UIImage imageNamed:@"mfg button"] forState:UIControlStateNormal];
@@ -54,6 +58,12 @@
 {
     NSArray *buttons = @[self.capButton, self.mfgButton, self.ralfButton, self.previousButton];
     return buttons;
+}
+
+-(NSArray *)viewArray
+{
+    NSArray *views = @[self.hostsAnimation];
+    return views;
 }
 
 /*
@@ -84,6 +94,7 @@
 - (IBAction)previousTapped:(id)sender
 {
     [self.navigationController popViewControllerAnimated:YES];
+    [self.hostsAnimation removeM22HostsAnimation];
 }
 
 

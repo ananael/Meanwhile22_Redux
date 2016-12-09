@@ -327,9 +327,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0GA-GA-hVj" userLabel="pageAccent">
                                 <rect key="frame" x="20" y="20" width="335" height="627"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w2G-nr-Ahh" userLabel="hostAnimation">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w2G-nr-Ahh" userLabel="hostAnimation" customClass="M22HostsAnimationView">
                                         <rect key="frame" x="5" y="5" width="325" height="156.5"/>
-                                        <color key="backgroundColor" red="0.95008441359999996" green="0.3755196931" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6p-yT-fIF" userLabel="capButton">
                                         <rect key="frame" x="5" y="171" width="325" height="145"/>
@@ -429,7 +429,7 @@
                     <connections>
                         <outlet property="backgroundImage" destination="wED-Ka-WA5" id="Ngf-dI-BA1"/>
                         <outlet property="capButton" destination="b6p-yT-fIF" id="F2a-pZ-dvf"/>
-                        <outlet property="hostAnimation" destination="w2G-nr-Ahh" id="5Ho-iK-8Ey"/>
+                        <outlet property="hostsAnimation" destination="w2G-nr-Ahh" id="O7g-yc-gKB"/>
                         <outlet property="mfgButton" destination="NwP-6i-LxU" id="kkX-LH-jGg"/>
                         <outlet property="pageAccent" destination="0GA-GA-hVj" id="eZN-Bx-tD5"/>
                         <outlet property="previousButton" destination="qEZ-Ty-G3F" id="XLI-Qg-bAy"/>

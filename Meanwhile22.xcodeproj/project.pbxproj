@@ -87,6 +87,8 @@
 		D293697B1DDD8E72002851D5 /* twitter logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D29369791DDD8E72002851D5 /* twitter logo@2x.png */; };
 		D299111E1DF106E3001C627D /* Biographies.m in Sources */ = {isa = PBXBuildFile; fileRef = D299111D1DF106E3001C627D /* Biographies.m */; };
 		D29911211DF1CBB5001C627D /* SuggestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29911201DF1CBB5001C627D /* SuggestionsViewController.m */; };
+		D29911261DFA795C001C627D /* M22HostsAnimation.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D29911251DFA795C001C627D /* M22HostsAnimation.xcassets */; };
+		D29911291DFA7FB2001C627D /* M22HostsAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = D29911281DFA7FB2001C627D /* M22HostsAnimationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -208,6 +210,9 @@
 		D299111D1DF106E3001C627D /* Biographies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Biographies.m; sourceTree = "<group>"; };
 		D299111F1DF1CBB5001C627D /* SuggestionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionsViewController.h; sourceTree = "<group>"; };
 		D29911201DF1CBB5001C627D /* SuggestionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionsViewController.m; sourceTree = "<group>"; };
+		D29911251DFA795C001C627D /* M22HostsAnimation.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = M22HostsAnimation.xcassets; sourceTree = "<group>"; };
+		D29911271DFA7FB2001C627D /* M22HostsAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M22HostsAnimationView.h; sourceTree = "<group>"; };
+		D29911281DFA7FB2001C627D /* M22HostsAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M22HostsAnimationView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +292,8 @@
 				D211FC301DE2ACBD00270FBE /* M22IntroAnimationView.m */,
 				D211FC6B1DE2B95A00270FBE /* M22HomeAnimationView.h */,
 				D211FC6C1DE2B95A00270FBE /* M22HomeAnimationView.m */,
+				D29911271DFA7FB2001C627D /* M22HostsAnimationView.h */,
+				D29911281DFA7FB2001C627D /* M22HostsAnimationView.m */,
 			);
 			name = Animations;
 			sourceTree = "<group>";
@@ -294,6 +301,7 @@
 		D211FC2E1DE2ACAB00270FBE /* animation images */ = {
 			isa = PBXGroup;
 			children = (
+				D29911251DFA795C001C627D /* M22HostsAnimation.xcassets */,
 				D211FC6E1DE2B96900270FBE /* M22HomeAnimation.xcassets */,
 				D211FC701DE2BB3200270FBE /* M22IntroAnimation images */,
 			);
@@ -634,6 +642,7 @@
 				D2108AF51DECBBDD003C1A78 /* ralf button@3x.png in Resources */,
 				D211FC971DE8E95300270FBE /* host button@3x.png in Resources */,
 				D293694B1DDD8873002851D5 /* Assets.xcassets in Resources */,
+				D29911261DFA795C001C627D /* M22HostsAnimation.xcassets in Resources */,
 				D211FC4E1DE2ACEA00270FBE /* base.png in Resources */,
 				D211FC5E1DE2ACEA00270FBE /* mfg.png in Resources */,
 				D2108AFD1DECC475003C1A78 /* cap button@3x.png in Resources */,
@@ -703,6 +712,7 @@
 				D211FC311DE2ACBD00270FBE /* M22IntroAnimationView.m in Sources */,
 				D211FC761DE3954700270FBE /* PodcastParser.m in Sources */,
 				D29369401DDD8873002851D5 /* main.m in Sources */,
+				D29911291DFA7FB2001C627D /* M22HostsAnimationView.m in Sources */,
 				D29369761DDD897D002851D5 /* HomeViewController.m in Sources */,
 				D211FC831DE6193200270FBE /* EpisodePlayerViewController.m in Sources */,
 				D211FC7E1DE3A3CD00270FBE /* EpisodeListTableViewCell.m in Sources */,

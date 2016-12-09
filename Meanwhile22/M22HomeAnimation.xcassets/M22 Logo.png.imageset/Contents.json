@@ -2,17 +2,21 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "2x",
-      "filename" : "M22 Logo@2x.png"
+      "filename" : "M22 Logo.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "M22 Logo.png"
+      "filename" : "M22 Logo@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {
     "version" : 1,
-    "author" : "coreanimator"
+    "author" : "xcode"
   }
 }
