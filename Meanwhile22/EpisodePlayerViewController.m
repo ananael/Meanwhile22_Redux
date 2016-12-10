@@ -156,6 +156,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Arrays
+
 -(NSArray *)viewArray1
 {
     NSArray *views = @[self.timeContainer, self.bottomContainer];
@@ -189,6 +191,8 @@
     self.elapsedLabel.text = currentTime;
 }
 
+#pragma mark - Label Formatting
+
 // *** Shown in durationLabel ***
 -(void)displayTimeRemaining
 {
@@ -208,6 +212,8 @@
     
     [self.player seekToTime:kCMTimeZero];
 }
+
+#pragma mark - Player Formatting
 
 //Use if the parsed duration is in seconds
 - (NSString *)formattedTime:(NSInteger)duration
@@ -254,16 +260,6 @@
     return timeInSeconds;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 #pragma mark - Player Controls
 
 -(void)updateSlider
@@ -285,6 +281,8 @@
         }
     }];
 }
+
+#pragma mark - Buttons
 
 - (IBAction)pauseTapped:(id)sender
 {

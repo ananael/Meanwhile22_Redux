@@ -65,41 +65,10 @@
     self.podcastURLs = [NSMutableArray new];
     
     [self networkCheck];
-    //[self initializePodcastParser];
-    //[self sortPodcastData];
     
+    [self initializePodcastParser];
+    [self sortPodcastData];
     
-    //Initializes the parser and puts the data in an array
-    PodcastParser *episodeParser = [[PodcastParser alloc]initWithArray:self.podcastArray];
-    [episodeParser parseXMLFile];
-    
-    //Iterates through the episodes and puts podcast URL into array
-    //Iterates through the episode titles and split the string into 2 parts ("title" and "subtitle") and adds to arrays
-    for (NSInteger i=0; i<[self.podcastArray count]; i++)
-    {
-        self.episode = self.podcastArray[i];
-        NSString *episodeSummary = self.episode.itunesSummary;
-        NSString *stringURL = self.episode.podcastURL;
-        NSString *originalTitle = self.episode.title;
-        
-        //Range is for the first instance of " : "
-        NSRange range = [originalTitle rangeOfString:@":"];
-        
-        //Grabs everything before the range but needs "-1" to remove the " : " from the results
-        NSString *episodeTitle = [originalTitle substringToIndex:NSMaxRange(range)-1];
-        
-        //Grabs everything after the range but needs "+1" to remove the space following " : " from the results
-        NSString *episodeSubtitle = [originalTitle substringFromIndex:NSMaxRange(range)+1];
-        
-        [self.podcastURLs addObject:stringURL];
-        [self.podcastTitles addObject:episodeTitle];
-        [self.podcastSubtitles addObject:episodeSubtitle];
-        [self.podcastSummaries addObject:episodeSummary];
-        
-        //NSLog(@"%@ : %@", self.podcastTitles[i], self.podcastSubtitles[i]);
-        //NSLog(@"%@ : %@", self.podcastTitles[i], self.podcastSummaries[i]);
-        
-    }
     NSLog(@"PODCAST: %@", self.podcastArray);
     
 }
@@ -108,6 +77,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - Arrays
 
 -(NSArray *)viewArray
 {
@@ -143,6 +114,8 @@
                     }
                 }] resume];
 }
+
+#pragma mark - Parsing Initializer and Sorter
 
 -(void)initializePodcastParser
 {
@@ -237,9 +210,11 @@
     }
 }
 
+#pragma mark - Button
+
 - (IBAction)previousTapped:(id)sender
 {
-    [self.navigationController popViewControllerAnimated:YES];
+    [self performSegueWithIdentifier:@"unwindEpisodeSegue" sender:self];
 }
 
 

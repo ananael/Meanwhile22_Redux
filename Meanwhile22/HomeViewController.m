@@ -50,6 +50,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Arrays
+
 -(NSArray *)viewArray
 {
     NSArray *views = @[self.homeAnimation];
@@ -62,24 +64,16 @@
     return buttons;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+#pragma mark - Buttons
 
 - (IBAction)podcastTapped:(id)sender
 {
-    
+    [self.homeAnimation removeM22HomeAnimation];
 }
 
 - (IBAction)hostTapped:(id)sender
 {
-    
+    [self.homeAnimation removeM22HomeAnimation];
 }
 
 - (IBAction)twitterTapped:(id)sender
@@ -102,7 +96,12 @@
                              completionHandler:nil];
 }
 
-
+//The "podcast" and "host" buttons stop the looping animation once user has left the page. Otherwise, it runs behind the scene
+//The unwind segue is used to restart the animation
+-(IBAction)returnToHomeVC:(UIStoryboardSegue *)unwindEpisode
+{
+    [self.homeAnimation addM22HomeAnimation];
+}
 
 
 

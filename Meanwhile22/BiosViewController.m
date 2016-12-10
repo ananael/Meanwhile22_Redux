@@ -102,7 +102,7 @@
 
 - (IBAction)previousTapped:(id)sender
 {
-    [self.navigationController popViewControllerAnimated:YES];
+    [self performSegueWithIdentifier:@"unwindBiosSegue" sender:self];
 }
 
 - (IBAction)recommendTapped:(id)sender

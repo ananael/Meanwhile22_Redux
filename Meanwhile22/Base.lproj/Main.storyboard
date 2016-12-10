@@ -303,9 +303,11 @@
                         <outlet property="pageAccent" destination="kNe-UN-wHV" id="5Wb-dd-FdR"/>
                         <outlet property="previousButton" destination="1zO-aV-iYw" id="Xas-pT-jCB"/>
                         <outlet property="tableView" destination="5aQ-XM-11D" id="f1V-bE-Pjg"/>
+                        <segue destination="cgs-Df-oXB" kind="unwind" identifier="unwindEpisodeSegue" unwindAction="returnToHomeVC:" id="BnF-RO-9eu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4W5-hS-Sud" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="cgs-Df-oXB" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2756" y="172.26386806596702"/>
         </scene>
@@ -434,9 +436,11 @@
                         <outlet property="pageAccent" destination="0GA-GA-hVj" id="eZN-Bx-tD5"/>
                         <outlet property="previousButton" destination="qEZ-Ty-G3F" id="XLI-Qg-bAy"/>
                         <outlet property="ralfButton" destination="oLZ-ur-6Nx" id="GT8-JR-rWg"/>
+                        <segue destination="As3-ON-wst" kind="unwind" identifier="unwindHostsSegue" unwindAction="returnToHomeVC:" id="568-vz-9Qd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="weE-8R-Jof" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="As3-ON-wst" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2756" y="872"/>
         </scene>
@@ -602,9 +606,11 @@
                         <outlet property="previousButton" destination="Xlf-k6-MqU" id="tT6-0c-QS2"/>
                         <outlet property="recommendButton" destination="aTX-ZZ-nKp" id="bj4-yP-xOd"/>
                         <outlet property="scrollContainer" destination="wrc-0H-0pd" id="0D5-60-wLb"/>
+                        <segue destination="phZ-8K-JhK" kind="unwind" identifier="unwindBiosSegue" unwindAction="returnToHostsVC:" id="Pf3-TG-QM0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DUF-hZ-ixx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="phZ-8K-JhK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3628" y="871"/>
         </scene>

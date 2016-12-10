@@ -54,6 +54,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Arrays
+
 -(NSArray *)buttonArray
 {
     NSArray *buttons = @[self.capButton, self.mfgButton, self.ralfButton, self.previousButton];
@@ -66,37 +68,38 @@
     return views;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+#pragma mark - Buttons
 
 - (IBAction)capTapped:(id)sender
 {
     [[NSUserDefaults standardUserDefaults]setInteger:1 forKey:@"HostSaved"];
+    [self.hostsAnimation removeM22HostsAnimation];
 }
 
 - (IBAction)mfgTapped:(id)sender
 {
     [[NSUserDefaults standardUserDefaults]setInteger:2 forKey:@"HostSaved"];
+    [self.hostsAnimation removeM22HostsAnimation];
 }
 
 - (IBAction)ralfTapped:(id)sender
 {
     [[NSUserDefaults standardUserDefaults]setInteger:3 forKey:@"HostSaved"];
+    [self.hostsAnimation removeM22HostsAnimation];
 }
 
 - (IBAction)previousTapped:(id)sender
 {
-    [self.navigationController popViewControllerAnimated:YES];
+    [self performSegueWithIdentifier:@"unwindHostsSegue" sender:self];
     [self.hostsAnimation removeM22HostsAnimation];
 }
 
+//The buttons above stop the looping animation once user has left the page. Otherwise, it runs behind the scene
+//The unwind segue is used to restart the animation
+-(IBAction)returnToHostsVC:(UIStoryboardSegue *)unwindBios
+{
+    [self.hostsAnimation addM22HostsAnimation];
+}
 
 
 
