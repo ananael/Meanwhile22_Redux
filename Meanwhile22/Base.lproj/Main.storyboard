@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Pnc-gw-fzt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Pnc-gw-fzt">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -728,9 +728,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m3v-Dn-bMF" userLabel="pageAccent">
                                 <rect key="frame" x="20" y="20" width="335" height="627"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Pd-TI-0H3" userLabel="playerAnimation">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Pd-TI-0H3" userLabel="playerAnimation" customClass="M22PlayerOrbAnimationView">
                                         <rect key="frame" x="5" y="5" width="325" height="156.5"/>
-                                        <color key="backgroundColor" red="0.95008441359999996" green="0.3755196931" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hNm-q0-xY2" userLabel="placeholderContainer">
                                         <rect key="frame" x="5" y="5" width="325" height="145"/>
@@ -839,7 +838,7 @@
                                         <rect key="frame" x="5" y="465.5" width="325" height="156.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lh-cU-hGj" userLabel="titleLabel">
-                                                <rect key="frame" x="5" y="0.0" width="315" height="24.5"/>
+                                                <rect key="frame" x="5" y="0.0" width="315" height="23.5"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -848,10 +847,10 @@
                                                 </variation>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u64-fF-RNG" userLabel="scrollContainer">
-                                                <rect key="frame" x="0.0" y="24.5" width="325" height="132"/>
+                                                <rect key="frame" x="0.0" y="23.5" width="325" height="133"/>
                                                 <subviews>
                                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q13-9R-7dO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="325" height="132"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="325" height="133"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1s-M6-Roc" userLabel="contentView">
                                                                 <rect key="frame" x="5" y="0.0" width="315" height="275"/>
@@ -1001,6 +1000,7 @@
                         <outlet property="pageAccent" destination="m3v-Dn-bMF" id="9IO-eX-VYa"/>
                         <outlet property="pauseButton" destination="z3h-cF-rf7" id="VPQ-yz-rQk"/>
                         <outlet property="playButton" destination="ped-9T-A7N" id="OLi-jh-Kho"/>
+                        <outlet property="playerAnimation" destination="7Pd-TI-0H3" id="8OQ-iI-vtL"/>
                         <outlet property="plusButton" destination="eR5-yH-auS" id="E8V-3S-2Bx"/>
                         <outlet property="previousButton" destination="fON-lF-AaH" id="nKF-e5-3Km"/>
                         <outlet property="remainingLabel" destination="h7v-i1-yZM" id="aAG-70-m97"/>

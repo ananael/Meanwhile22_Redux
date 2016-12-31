@@ -1,0 +1,18 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "scale" : "2x",
+      "filename" : "orb left one@2x.png"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "1x",
+      "filename" : "orb left one.png"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "coreanimator"
+  }
+}

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D20B392C1E17538F00263206 /* M22PlayerOrbAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = D20B392A1E17538F00263206 /* M22PlayerOrbAnimationView.m */; };
+		D20B392E1E1753A200263206 /* M22PlayerOrbAnimation.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20B392D1E1753A200263206 /* M22PlayerOrbAnimation.xcassets */; };
 		D2108AF41DECBBDD003C1A78 /* ralf button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2108AEE1DECBBDD003C1A78 /* ralf button@2x.png */; };
 		D2108AF51DECBBDD003C1A78 /* ralf button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2108AEF1DECBBDD003C1A78 /* ralf button@3x.png */; };
 		D2108AFC1DECC475003C1A78 /* cap button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2108AFA1DECC475003C1A78 /* cap button@2x.png */; };
@@ -109,6 +111,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D20B392A1E17538F00263206 /* M22PlayerOrbAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M22PlayerOrbAnimationView.m; sourceTree = "<group>"; };
+		D20B392B1E17538F00263206 /* M22PlayerOrbAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M22PlayerOrbAnimationView.h; sourceTree = "<group>"; };
+		D20B392D1E1753A200263206 /* M22PlayerOrbAnimation.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = M22PlayerOrbAnimation.xcassets; sourceTree = "<group>"; };
 		D2108AEE1DECBBDD003C1A78 /* ralf button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ralf button@2x.png"; sourceTree = "<group>"; };
 		D2108AEF1DECBBDD003C1A78 /* ralf button@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ralf button@3x.png"; sourceTree = "<group>"; };
 		D2108AFA1DECC475003C1A78 /* cap button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cap button@2x.png"; sourceTree = "<group>"; };
@@ -294,6 +299,8 @@
 				D211FC6C1DE2B95A00270FBE /* M22HomeAnimationView.m */,
 				D29911271DFA7FB2001C627D /* M22HostsAnimationView.h */,
 				D29911281DFA7FB2001C627D /* M22HostsAnimationView.m */,
+				D20B392A1E17538F00263206 /* M22PlayerOrbAnimationView.m */,
+				D20B392B1E17538F00263206 /* M22PlayerOrbAnimationView.h */,
 			);
 			name = Animations;
 			sourceTree = "<group>";
@@ -303,6 +310,7 @@
 			children = (
 				D29911251DFA795C001C627D /* M22HostsAnimation.xcassets */,
 				D211FC6E1DE2B96900270FBE /* M22HomeAnimation.xcassets */,
+				D20B392D1E1753A200263206 /* M22PlayerOrbAnimation.xcassets */,
 				D211FC701DE2BB3200270FBE /* M22IntroAnimation images */,
 			);
 			name = "animation images";
@@ -661,6 +669,7 @@
 				D211FC581DE2ACEA00270FBE /* flash.png in Resources */,
 				D211FC541DE2ACEA00270FBE /* cap star.png in Resources */,
 				D2108B011DECD047003C1A78 /* mfg button@3x.png in Resources */,
+				D20B392E1E1753A200263206 /* M22PlayerOrbAnimation.xcassets in Resources */,
 				D211FCAF1DE8EB0700270FBE /* play button@2x.png in Resources */,
 				D211FC511DE2ACEA00270FBE /* blurb@2x.png in Resources */,
 				D211FC571DE2ACEA00270FBE /* cap@2x.png in Resources */,
@@ -699,6 +708,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D20B392C1E17538F00263206 /* M22PlayerOrbAnimationView.m in Sources */,
 				D29911211DF1CBB5001C627D /* SuggestionsViewController.m in Sources */,
 				D29369431DDD8873002851D5 /* AppDelegate.m in Sources */,
 				D2108B071DEFCD1D003C1A78 /* BiosViewController.m in Sources */,

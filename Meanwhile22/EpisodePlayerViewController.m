@@ -10,12 +10,14 @@
 #import <AVKit/AVKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import "PodcastParser.h"
+#import "M22PlayerOrbAnimationView.h"
 #import "MethodsCache.h"
 
 @interface EpisodePlayerViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 @property (weak, nonatomic) IBOutlet UIView *pageAccent;
+@property (weak, nonatomic) IBOutlet M22PlayerOrbAnimationView *playerAnimation;
 @property (weak, nonatomic) IBOutlet UISlider *slider;
 @property (weak, nonatomic) IBOutlet UIView *timeContainer;
 @property (weak, nonatomic) IBOutlet UILabel *elapsedLabel;
@@ -57,6 +59,9 @@
     
     self.backgroundImage.image = [UIImage imageNamed:@"paper A lite"];
     self.pageAccent.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.7];
+    
+    [self.playerAnimation addM22PlayerOrbAnimation];
+    
     [self.pauseButton setBackgroundImage:[UIImage imageNamed:@"pause button"] forState:UIControlStateNormal];
     [self.stopButton setBackgroundImage:[UIImage imageNamed:@"stop button"] forState:UIControlStateNormal];
     [self.minusButton setBackgroundImage:[UIImage imageNamed:@"minus button"] forState:UIControlStateNormal];
@@ -211,6 +216,7 @@
     self.elapsedTimer = nil;
     
     [self.player seekToTime:kCMTimeZero];
+    [self.playerAnimation removeM22PlayerOrbAnimation];
 }
 
 #pragma mark - Player Formatting
@@ -287,8 +293,7 @@
 - (IBAction)pauseTapped:(id)sender
 {
     [self.player pause];
-    //[self.avImage stopAnimating];
-    
+    [self.playerAnimation removeM22PlayerOrbAnimation];
     //Extra "savedProgress" location, in case user pauses then closes app without engaging "previous" button
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSInteger seconds = CMTimeGetSeconds([self.player currentTime]);
@@ -303,7 +308,7 @@
     [self.player pause];
     
     [self.player seekToTime:kCMTimeZero];
-    //[self.avImage stopAnimating];
+    [self.playerAnimation removeM22PlayerOrbAnimation];
 }
 
 - (IBAction)minusTapped:(id)sender
@@ -316,7 +321,7 @@
     
     [self.player seekToTime:backTime];
     [self.player play];
-    //[self.avImage startAnimating];
+    [self.playerAnimation addM22PlayerOrbAnimation];
 }
 
 - (IBAction)plusTapped:(id)sender
@@ -329,13 +334,13 @@
     
     [self.player seekToTime:backTime];
     [self.player play];
-    //[self.avImage startAnimating];
+    [self.playerAnimation addM22PlayerOrbAnimation];
 }
 
 - (IBAction)playTapped:(id)sender
 {
     [self.player play];
-    //[self.avImage startAnimating];
+    [self.playerAnimation addM22PlayerOrbAnimation];
 }
 
 - (IBAction)previousTapped:(id)sender
@@ -352,7 +357,7 @@
     
     [self.player seekToTime:kCMTimeZero];
     self.player = nil;
-    //[self.avImage stopAnimating];
+    [self.playerAnimation removeM22PlayerOrbAnimation];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
